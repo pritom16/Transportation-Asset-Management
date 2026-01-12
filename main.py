@@ -43,7 +43,7 @@ def compute_centrality(G, measure):
         return nx.degree_centrality(G_undirected)
     return nx.degree_centrality(G_undirected)
 
-@app.route('/analyze-network', methods=['POST'])
+@app.route('https://transportation-asset-management.onrender.com/analyze-network', methods=['POST'])
 def analyze_network():
     try:
         data = request.json
@@ -141,7 +141,7 @@ def analyze_network():
         traceback.print_exc()
         return jsonify({"error": str(e)}), 500
     
-@app.route('/analyze-advanced', methods=['POST'])
+@app.route('https://transportation-asset-management.onrender.com/analyze-advanced', methods=['POST'])
 def analyze_advanced():
     try:
         data = request.json
