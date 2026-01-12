@@ -212,19 +212,19 @@
               <li class="nav-item">
                 <a href="./index.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v1</p>
+                  <p>Network Statistics</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="./index2.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v2</p>
+                  <p>Centrality Analysis</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="./index3.html" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v3</p>
+                  <p>Origin Destination</p>
                 </a>
               </li>
             </ul>
@@ -845,12 +845,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Dashboard v3</h1>
+            <h1 class="m-0">Origin Destination</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v3</li>
+              <li class="breadcrumb-item active">Origin Destination</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -859,255 +859,123 @@
     <!-- /.content-header -->
 
     <!-- Main content -->
-    <div class="content">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="card">
-              <div class="card-header border-0">
-                <div class="d-flex justify-content-between">
-                  <h3 class="card-title">Online Store Visitors</h3>
-                  <a href="javascript:void(0);">View Report</a>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="d-flex">
-                  <p class="d-flex flex-column">
-                    <span class="text-bold text-lg">820</span>
-                    <span>Visitors Over Time</span>
-                  </p>
-                  <p class="ml-auto d-flex flex-column text-right">
-                    <span class="text-success">
-                      <i class="fas fa-arrow-up"></i> 12.5%
-                    </span>
-                    <span class="text-muted">Since last week</span>
-                  </p>
-                </div>
-                <!-- /.d-flex -->
+    <section class="content">
+  <div class="container-fluid">
 
-                <div class="position-relative mb-4">
-                  <canvas id="visitors-chart" height="200"></canvas>
-                </div>
-
-                <div class="d-flex flex-row justify-content-end">
-                  <span class="mr-2">
-                    <i class="fas fa-square text-primary"></i> This Week
-                  </span>
-
-                  <span>
-                    <i class="fas fa-square text-gray"></i> Last Week
-                  </span>
-                </div>
-              </div>
-            </div>
-            <!-- /.card -->
-
-            <div class="card">
-              <div class="card-header border-0">
-                <h3 class="card-title">Products</h3>
-                <div class="card-tools">
-                  <a href="#" class="btn btn-tool btn-sm">
-                    <i class="fas fa-download"></i>
-                  </a>
-                  <a href="#" class="btn btn-tool btn-sm">
-                    <i class="fas fa-bars"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="card-body table-responsive p-0">
-                <table class="table table-striped table-valign-middle">
-                  <thead>
-                  <tr>
-                    <th>Product</th>
-                    <th>Price</th>
-                    <th>Sales</th>
-                    <th>More</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td>
-                      <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
-                      Some Product
-                    </td>
-                    <td>$13 USD</td>
-                    <td>
-                      <small class="text-success mr-1">
-                        <i class="fas fa-arrow-up"></i>
-                        12%
-                      </small>
-                      12,000 Sold
-                    </td>
-                    <td>
-                      <a href="#" class="text-muted">
-                        <i class="fas fa-search"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
-                      Another Product
-                    </td>
-                    <td>$29 USD</td>
-                    <td>
-                      <small class="text-warning mr-1">
-                        <i class="fas fa-arrow-down"></i>
-                        0.5%
-                      </small>
-                      123,234 Sold
-                    </td>
-                    <td>
-                      <a href="#" class="text-muted">
-                        <i class="fas fa-search"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
-                      Amazing Product
-                    </td>
-                    <td>$1,230 USD</td>
-                    <td>
-                      <small class="text-danger mr-1">
-                        <i class="fas fa-arrow-down"></i>
-                        3%
-                      </small>
-                      198 Sold
-                    </td>
-                    <td>
-                      <a href="#" class="text-muted">
-                        <i class="fas fa-search"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
-                      Perfect Item
-                      <span class="badge bg-danger">NEW</span>
-                    </td>
-                    <td>$199 USD</td>
-                    <td>
-                      <small class="text-success mr-1">
-                        <i class="fas fa-arrow-up"></i>
-                        63%
-                      </small>
-                      87 Sold
-                    </td>
-                    <td>
-                      <a href="#" class="text-muted">
-                        <i class="fas fa-search"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <!-- /.card -->
-          </div>
-          <!-- /.col-md-6 -->
-          <div class="col-lg-6">
-            <div class="card">
-              <div class="card-header border-0">
-                <div class="d-flex justify-content-between">
-                  <h3 class="card-title">Sales</h3>
-                  <a href="javascript:void(0);">View Report</a>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="d-flex">
-                  <p class="d-flex flex-column">
-                    <span class="text-bold text-lg">$18,230.00</span>
-                    <span>Sales Over Time</span>
-                  </p>
-                  <p class="ml-auto d-flex flex-column text-right">
-                    <span class="text-success">
-                      <i class="fas fa-arrow-up"></i> 33.1%
-                    </span>
-                    <span class="text-muted">Since last month</span>
-                  </p>
-                </div>
-                <!-- /.d-flex -->
-
-                <div class="position-relative mb-4">
-                  <canvas id="sales-chart" height="200"></canvas>
-                </div>
-
-                <div class="d-flex flex-row justify-content-end">
-                  <span class="mr-2">
-                    <i class="fas fa-square text-primary"></i> This year
-                  </span>
-
-                  <span>
-                    <i class="fas fa-square text-gray"></i> Last year
-                  </span>
-                </div>
-              </div>
-            </div>
-            <!-- /.card -->
-
-            <div class="card">
-              <div class="card-header border-0">
-                <h3 class="card-title">Online Store Overview</h3>
-                <div class="card-tools">
-                  <a href="#" class="btn btn-sm btn-tool">
-                    <i class="fas fa-download"></i>
-                  </a>
-                  <a href="#" class="btn btn-sm btn-tool">
-                    <i class="fas fa-bars"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center border-bottom mb-3">
-                  <p class="text-success text-xl">
-                    <i class="ion ion-ios-refresh-empty"></i>
-                  </p>
-                  <p class="d-flex flex-column text-right">
-                    <span class="font-weight-bold">
-                      <i class="ion ion-android-arrow-up text-success"></i> 12%
-                    </span>
-                    <span class="text-muted">CONVERSION RATE</span>
-                  </p>
-                </div>
-                <!-- /.d-flex -->
-                <div class="d-flex justify-content-between align-items-center border-bottom mb-3">
-                  <p class="text-warning text-xl">
-                    <i class="ion ion-ios-cart-outline"></i>
-                  </p>
-                  <p class="d-flex flex-column text-right">
-                    <span class="font-weight-bold">
-                      <i class="ion ion-android-arrow-up text-warning"></i> 0.8%
-                    </span>
-                    <span class="text-muted">SALES RATE</span>
-                  </p>
-                </div>
-                <!-- /.d-flex -->
-                <div class="d-flex justify-content-between align-items-center mb-0">
-                  <p class="text-danger text-xl">
-                    <i class="ion ion-ios-people-outline"></i>
-                  </p>
-                  <p class="d-flex flex-column text-right">
-                    <span class="font-weight-bold">
-                      <i class="ion ion-android-arrow-down text-danger"></i> 1%
-                    </span>
-                    <span class="text-muted">REGISTRATION RATE</span>
-                  </p>
-                </div>
-                <!-- /.d-flex -->
-              </div>
-            </div>
-          </div>
-          <!-- /.col-md-6 -->
-        </div>
-        <!-- /.row -->
+    <div class="card card-indigo">
+      <div class="card-header">
+        <h3 class="card-title"><i class="fas fa-route mr-1"></i> Trip & Area Configuration</h3>
       </div>
-      <!-- /.container-fluid -->
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="form-group">
+              <label>Origin Location</label>
+              <input type="text" id="originLoc" class="form-control" placeholder="e.g. Start Point">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <label>Destination Location</label>
+              <input type="text" id="destLoc" class="form-control" placeholder="e.g. End Point">
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="form-group">
+              <label>Radius (Meters)</label>
+              <input type="number" id="analysisRadius" class="form-control" placeholder="e.g. 1000">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label>Specific Coordinates (Lat, Lon)</label>
+              <input type="text" id="pointCoords" class="form-control" placeholder="23.81, 90.41">
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-indigo float-right" id="runRoutingAnalysis">Analyze Route & Area</button>
+      </div>
     </div>
-    <!-- /.content -->
+
+    <div class="row">
+      <div class="col-md-7">
+        <div class="card">
+          <div class="card-header"><h3 class="card-title">Interactive OD Network Map</h3></div>
+          <div class="card-body p-0">
+            <div id="interactive-od-map" style="height: 450px; width: 100%;">
+              <p class="text-center pt-5">Interactive routing map will load here...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="card">
+          <div class="card-header"><h3 class="card-title">Static OD Map View</h3></div>
+          <div class="card-body text-center" style="height: 450px;">
+            <div id="static-od-placeholder" class="h-100 d-flex align-items-center justify-content-center bg-light border">
+               <i class="fas fa-map fa-3x text-muted"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header"><h3 class="card-title">Travel Time by Mode (Minutes)</h3></div>
+          <div class="card-body"><canvas id="histTravelTime" style="height: 250px;"></canvas></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header"><h3 class="card-title">Travel Distance by Mode (KM)</h3></div>
+          <div class="card-body"><canvas id="histTravelDistance" style="height: 250px;"></canvas></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card card-danger card-outline">
+          <div class="card-header"><h3 class="card-title">Path Comparison: Shortest vs. Longest Path</h3></div>
+          <div class="card-body p-0">
+            <div id="interactive-path-comparison" style="height: 500px; width: 100%;">
+              <p class="text-center pt-5">Interactive path comparison will load here...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header"><h3 class="card-title">Time Required (Min)</h3></div>
+          <div class="card-body"><canvas id="donutPathTime" style="height: 200px;"></canvas></div>
+        </div>
+        <div class="card">
+          <div class="card-header"><h3 class="card-title">Distance (KM)</h3></div>
+          <div class="card-body"><canvas id="donutPathDistance" style="height: 200px;"></canvas></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="card card-success">
+          <div class="card-header">
+            <h3 class="card-title"><i class="fas fa-bullseye mr-1"></i> Static Radius Area Visualization</h3>
+          </div>
+          <div class="card-body text-center" style="min-height: 500px;">
+            <div id="radius-static-map-container" class="h-100 w-100 d-flex align-items-center justify-content-center bg-light">
+              <p class="text-muted">Static map of the selected radius around coordinates will appear here.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+      
   </div>
   <!-- /.content-wrapper -->
 
@@ -1143,5 +1011,50 @@
 <script src="dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="dist/js/pages/dashboard3.js"></script>
+
+<script>
+$(function () {
+  // 1. Travel Time Histogram
+  new Chart($('#histTravelTime').get(0).getContext('2d'), {
+    type: 'bar',
+    data: {
+      labels: ['Train', 'Bus', 'Bike', 'Walk'],
+      datasets: [{ label: 'Minutes', backgroundColor: '#6f42c1', data: [15, 25, 20, 45] }]
+    },
+    options: { responsive: true, maintainAspectRatio: false }
+  });
+
+  // 2. Travel Distance Histogram
+  new Chart($('#histTravelDistance').get(0).getContext('2d'), {
+    type: 'bar',
+    data: {
+      labels: ['Train', 'Bus', 'Bike', 'Walk'],
+      datasets: [{ label: 'Kilometers (KM)', backgroundColor: '#007bff', data: [8.5, 7.2, 5.5, 5.5] }]
+    },
+    options: { responsive: true, maintainAspectRatio: false }
+  });
+
+  // 3. Shortest vs Longest Path Time Donut
+  new Chart($('#donutPathTime').get(0).getContext('2d'), {
+    type: 'doughnut',
+    data: {
+      labels: ['Shortest Path', 'Longest Path'],
+      datasets: [{ data: [20, 55], backgroundColor: ['#28a745', '#dc3545'] }]
+    },
+    options: { maintainAspectRatio: false }
+  });
+
+  // 4. Shortest vs Longest Path Distance Donut
+  new Chart($('#donutPathDistance').get(0).getContext('2d'), {
+    type: 'doughnut',
+    data: {
+      labels: ['Shortest Path', 'Longest Path'],
+      datasets: [{ data: [5.5, 12.8], backgroundColor: ['#20c997', '#fd7e14'] }]
+    },
+    options: { maintainAspectRatio: false }
+  });
+});
+</script>
+
 </body>
 </html>
